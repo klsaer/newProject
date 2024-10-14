@@ -16,8 +16,9 @@ return new class extends Migration
             $table->string('fname');
             $table->string('lname');
             $table->integer('age');
-            $table->string('path_image')->nullable();
+            $table->string('path_img')->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
